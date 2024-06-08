@@ -25,10 +25,16 @@ windows:
       - ros2 launch direct_lidar_inertial_odometry dlio.launch.py 
     name: dlio
 
-  - commands:
-      - source ${source}
-      - source ${unitree_ros2}
-      - rviz2 -d ${rviz_cfg}
-    name: rviz2
+  # - commands:
+  #     - source ${source}
+  #     - source ${unitree_ros2}
+  #     - ros2 launch point_cloud_processor point_cloud_processor_launch.py
+  #   name: point_cloud_processor
+
+  # - commands:
+  #     - source ${source}
+  #     - source ${unitree_ros2}
+  #     - rviz2 -d ${rviz_cfg}
+  #   name: rviz2
 
 

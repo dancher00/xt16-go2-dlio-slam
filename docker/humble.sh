@@ -17,6 +17,7 @@ fi
 # Dockerコンテナの実行
 docker run -it --rm \
   --privileged \
+  --runtime=nvidia \
   --net=host \
   --env="DISPLAY=$DISPLAY" \
   --env="QT_X11_NO_MITSHM=1" \
