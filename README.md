@@ -43,3 +43,7 @@ rviz
 $ rviz2 -d direct_lidar_inertial_odometry/launch/dlio.rviz
 ```
 
+
+# References
+
+- Original implementation and setup details: [TechShare Article](https://techshare.co.jp/faq/?p=345881&preview=true)
