@@ -1,0 +1,43 @@
+gmake[2]: *** Deleting file 'rosidl_generator_cpp/unitree_api/msg/request.hpp'
+gmake[2]: *** Deleting file 'rosidl_generator_c/unitree_api/msg/request.h'
+Traceback (most recent call last):
+  File "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 38, in <module>
+    sys.exit(main())
+  File "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 34, in main
+    generate_cpp(args.generator_arguments_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py", line 38, in generate_cpp
+    return generate_files(
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 87, in generate_files
+    expand_template(
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 149, in expand_template
+    interpreter.string(template_content, template_path, locals=data)
+  File "/usr/lib/python3/dist-packages/em.py", line 2391, in string
+    self.safe(scanner, True, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 2401, in safe
+    self.parse(scanner, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 2421, in parse
+    token.run(self, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 1425, in run
+    interpreter.execute(self.code, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 2596, in execute
+    _exec(statements, self.globals, locals)
+  File "<string>", line 6, in <module>
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 30, in convert_camel_case_to_lower_case_underscore
+    value = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', value)
+  File "/usr/lib/python3.10/re.py", line 209, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+  File "/usr/lib/python3.10/re.py", line 324, in _subx
+    def _subx(pattern, template):
+KeyboardInterrupt
+gmake[2]: *** [CMakeFiles/unitree_api__rosidl_generator_c.dir/build.make:154: rosidl_generator_c/unitree_api/msg/request.h] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:214: CMakeFiles/unitree_api__rosidl_generator_c.dir/all] Interrupt
+Exception ignored in: <function Interpreter.__del__ at 0xffffb4f6e170>
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/em.py", line 2094, in __del__
+  File "/usr/lib/python3/dist-packages/em.py", line 2157, in shutdown
+  File "/usr/lib/python3/dist-packages/em.py", line 2647, in finalize
+  File "/usr/lib/python3/dist-packages/em.py", line 2200, in push
+AttributeError: '_io.TextIOWrapper' object has no attribute 'push'
+gmake[2]: *** [CMakeFiles/unitree_api__cpp.dir/build.make:186: rosidl_generator_cpp/unitree_api/msg/request.hpp] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:267: CMakeFiles/unitree_api__cpp.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

@@ -1,0 +1,183 @@
+Traceback (most recent call last):
+  File "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 38, in <module>
+    sys.exit(main())
+gmake[2]: *** Deleting file 'rosidl_generator_cpp/unitree_go/msg/audio_data.hpp'
+  File "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 34, in main
+gmake[2]: *** Deleting file 'rosidl_generator_c/unitree_go/msg/audio_data.h'
+    generate_c(args.generator_arguments_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_c/__init__.py", line 37, in generate_c
+    return generate_files(
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 87, in generate_files
+    expand_template(
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 149, in expand_template
+Traceback (most recent call last):
+  File "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 38, in <module>
+Traceback (most recent call last):
+  File "/opt/ros/humble/lib/rosidl_generator_dds_idl/rosidl_generator_dds_idl", line 41, in <module>
+    sys.exit(main())
+    interpreter.string(template_content, template_path, locals=data)
+  File "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 34, in main
+  File "/usr/lib/python3/dist-packages/em.py", line 2391, in string
+    generate_cpp(args.generator_arguments_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py", line 38, in generate_cpp
+    return generate_files(
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 87, in generate_files
+    self.safe(scanner, True, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 2401, in safe
+    expand_template(
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 149, in expand_template
+    interpreter.string(template_content, template_path, locals=data)
+  File "/usr/lib/python3/dist-packages/em.py", line 2391, in string
+    self.parse(scanner, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 2421, in parse
+    token.run(self, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 1547, in run
+    self.subrun(info[0][1], interpreter, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 1631, in subrun
+    token.run(interpreter, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 1425, in run
+    self.safe(scanner, True, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 2401, in safe
+    interpreter.execute(self.code, locals)
+    sys.exit(main())
+  File "/opt/ros/humble/lib/rosidl_generator_dds_idl/rosidl_generator_dds_idl", line 32, in main
+    generate_dds_idl(
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_dds_idl/__init__.py", line 51, in generate_dds_idl
+Traceback (most recent call last):
+  File "/external/src/unitree_ros2/cyclonedds_ws/build/unitree_go/ament_cmake_python/unitree_go/setup.py", line 1, in <module>
+    return generate_files(generator_arguments_file, mapping, additional_context, keep_case=True)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+    idl_file = parse_idl_file(locator)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+    content = parse_idl_string(string, png_file=png_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+    tree = get_ast_from_idl_string(idl_string)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+    return _parser.parse(idl_string)
+  File "/usr/lib/python3/dist-packages/em.py", line 2596, in execute
+    from setuptools import find_packages
+  File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 16, in <module>
+    import setuptools.version
+  File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+    self.parse(scanner, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 2421, in parse
+    import pkg_resources
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3267, in <module>
+    _exec(statements, self.globals, locals)
+  File "<string>", line 2, in <module>
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse
+    return self.parser.parse(text, start=start, on_error=on_error)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse
+    token.run(self, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 1547, in run
+    def _initialize_master_working_set():
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3241, in _call_aside
+    return self.parser.parse(stream, chosen_start, **kw)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 292, in parse
+    return transformer.transform(solutions[0])
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 395, in transform
+    self.visit(root)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 531, in visit
+    self.subrun(info[0][1], interpreter, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 1631, in subrun
+    self.prioritizer.visit(root)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley_forest.py", line 328, in visit
+    if isinstance(current, TokenNode):
+KeyboardInterrupt
+    f(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3279, in _initialize_master_working_set
+    token.run(interpreter, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 1425, in run
+    interpreter.execute(self.code, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 2596, in execute
+    working_set = WorkingSet._build_master()
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 564, in _build_master
+    ws = cls()
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 557, in __init__
+    self.add_entry(entry)
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 613, in add_entry
+    _exec(statements, self.globals, locals)
+  File "<string>", line 2, in <module>
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 198, in _expand_template
+    interpreter.string(content, str(template_path), kwargs)
+  File "/usr/lib/python3/dist-packages/em.py", line 2391, in string
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 198, in _expand_template
+    self.safe(scanner, True, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 2401, in safe
+    interpreter.string(content, str(template_path), kwargs)
+  File "/usr/lib/python3/dist-packages/em.py", line 2391, in string
+    self.safe(scanner, True, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 2401, in safe
+    self.parse(scanner, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 2417, in parse
+    self.parse(scanner, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 2417, in parse
+    token = scanner.one()
+  File "/usr/lib/python3/dist-packages/em.py", line 1984, in one
+    token = scanner.one()
+  File "/usr/lib/python3/dist-packages/em.py", line 1984, in one
+    token.scan(self)
+  File "/usr/lib/python3/dist-packages/em.py", line 1468, in scan
+    self.subscan(scanner, self.type)
+  File "/usr/lib/python3/dist-packages/em.py", line 1483, in subscan
+    token = scanner.one()
+  File "/usr/lib/python3/dist-packages/em.py", line 1984, in one
+    token.scan(self)
+  File "/usr/lib/python3/dist-packages/em.py", line 1421, in scan
+    token.scan(self)
+  File "/usr/lib/python3/dist-packages/em.py", line 1468, in scan
+    i = scanner.complex('{', '}', 0)
+  File "/usr/lib/python3/dist-packages/em.py", line 1901, in complex
+    self.subscan(scanner, self.type)
+  File "/usr/lib/python3/dist-packages/em.py", line 1483, in subscan
+    token = scanner.one()
+  File "/usr/lib/python3/dist-packages/em.py", line 1978, in one
+    elif first in firsts:
+KeyboardInterrupt
+    c = self[i]
+  File "/usr/lib/python3/dist-packages/em.py", line 1682, in __getitem__
+    def __getitem__(self, index):
+KeyboardInterrupt
+    for dist in find_distributions(entry, True):
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2077, in find_on_path
+    for dist in factory(fullpath):
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2142, in distributions_from_metadata
+    yield Distribution.from_location(
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2606, in from_location
+    )._reload_version()
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3004, in _reload_version
+    md_version = self._get_version()
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2785, in _get_version
+    version = _version_from_file(lines)
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2571, in _version_from_file
+    return safe_version(value.strip()) or None
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1323, in safe_version
+    return str(packaging.version.Version(version))
+  File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 271, in __init__
+    release=tuple(int(i) for i in match.group("release").split(".")),
+  File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 271, in <genexpr>
+    release=tuple(int(i) for i in match.group("release").split(".")),
+KeyboardInterrupt
+Exception ignored in: <function Interpreter.__del__ at 0xffff8bc9e170>
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/em.py", line 2094, in __del__
+  File "/usr/lib/python3/dist-packages/em.py", line 2157, in shutdown
+  File "/usr/lib/python3/dist-packages/em.py", line 2647, in finalize
+  File "/usr/lib/python3/dist-packages/em.py", line 2200, in push
+AttributeError: '_io.TextIOWrapper' object has no attribute 'push'
+Exception ignored in: <function Interpreter.__del__ at 0xffffba271f30>
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/em.py", line 2094, in __del__
+  File "/usr/lib/python3/dist-packages/em.py", line 2157, in shutdown
+  File "/usr/lib/python3/dist-packages/em.py", line 2647, in finalize
+  File "/usr/lib/python3/dist-packages/em.py", line 2200, in push
+AttributeError: '_io.TextIOWrapper' object has no attribute 'push'
+gmake[2]: *** [CMakeFiles/unitree_go__dds_connext_idl.dir/build.make:185: rosidl_generator_dds_idl/unitree_go/msg/dds_connext/AudioData_.idl] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:592: CMakeFiles/unitree_go__dds_connext_idl.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/unitree_go__cpp.dir/build.make:266: rosidl_generator_cpp/unitree_go/msg/audio_data.hpp] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:267: CMakeFiles/unitree_go__cpp.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_unitree_go_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_unitree_go_egg] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:449: CMakeFiles/ament_cmake_python_build_unitree_go_egg.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/unitree_go__rosidl_generator_c.dir/build.make:170: rosidl_generator_c/unitree_go/msg/audio_data.h] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:214: CMakeFiles/unitree_go__rosidl_generator_c.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt
